@@ -3,7 +3,7 @@ $morado:#2D2735;
 $naranja:#FAB672;
 
 
-*{outline: 1px solid rgba(255,0,0,0.3);}
+/**{outline: 1px solid rgba(255,0,0,0.3);}*/
 header{background-color:$oscuro;  margin-left:-15px; margin-right:-15px;}
 footer{margin-left:-15px; margin-right:-15px;}
 
@@ -18,6 +18,7 @@ header ul li a{color:#fff; font-family:'Open Sans',sans-serif;}
 header ul li a:hover{color:#fff;}
 header ul{margin-top:20px;}
 header ul li{margin-right:10px;}
+.dropdown{display:none;}
 
 .hero{background-image:url('../image/header-image.jpg'); background-size:cover; height:300px; margin-top:30px; margin-bottom:30px; padding-top:50px;}
 .hero div{background-color:$oscuro; max-width:500px; margin:auto; padding-top:30px; padding-bottom:30px;}
@@ -28,10 +29,45 @@ header ul li{margin-right:10px;}
 
 .flores .thumbnail {margin-right:18px; width:31% !important;}
 
-@media screen and (max-width : 920px) {
+.vimeo p{background-color:$oscuro; padding:15px;}
 
+.search {background-color:$oscuro; padding:20px; margin-bottom:15px;}
+.search input{background-color:$morado; color:#fff; border:none; padding:8px;}
+
+.about .caption p:first-child{font-weight:700;}
+.about .caption p:nth-child(2){font-size:13px !important;}
+
+.redes li{background-color:$morado; border-radius:50%; color:#fff; padding:8px !important;width:30px; height:30px; margin-right:8px;}
+
+footer{background-color:$oscuro; padding-top:20px; padding-bottom:20px; margin-top:35px;}
+
+button{background-color:transparent; border:none;}
+.dropdown-menu{transform:translate(-50px,0px);}
+
+@media screen and (max-width : 920px) {
+.container {padding-right:3% !important; padding-left:3% !important;}
+.flores .thumbnail {margin-right:10px; display:inline-block;}
 }
 
 @media screen and (max-width: 600px) {
+
+.dropdown{display:block;}
+.barras{padding-top:15px; color:#fff;}
+
+header ul {display:none;}
+.hero{height:400px; padding-top:70px;}
+.hero div{max-width:270px;}
+.hero div h1{font-size:60px;}
+.hero div ul li{font-size:10px;margin-right:2px;}
+
+.flores .thumbnail {width:100% !important; margin-bottom:0px;}
+
+.pri{padding:0px !important; margin-top:30px;}
+.pri>div:first-child{margin-bottom:0px;}
+
+.sec{display:none;}
+
+footer{margin-top:20px;}
+
 
 }
